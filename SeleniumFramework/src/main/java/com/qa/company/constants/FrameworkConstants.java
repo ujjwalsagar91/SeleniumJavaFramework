@@ -6,7 +6,6 @@ import com.qa.company.utils.PropertyUtils;
 public final class FrameworkConstants {
 
 	private FrameworkConstants(){
-
 	}
 
 	private static final int EXPLICITWAIT = 10;
