@@ -1,0 +1,16 @@
+{
+  "userLogins" : [
+    {
+       "username": "Admin",
+       "password": "Admin123"
+    },
+    {
+       "username": "test",
+       "password": "test123"
+    },
+    {
+       "username": "xyz",
+       "password": "xyz123"
+    }
+  ]
+}

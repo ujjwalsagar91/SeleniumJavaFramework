@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" data-provider-thread-count="2">
+  <listeners>
+    <listener class-name="com.qa.company.listeners.ListenerClass"/>
+    <listener class-name="com.qa.company.listeners.MethodInterceptor"/>
+    <listener class-name="com.qa.company.listeners.AnnotationTransformer"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)" parallel="methods">
+    <classes>
+      <class name="com.qa.company.tests.OpenMRSTest">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="loginLogoutTest" invocation-numbers="1 1"/>
+        </methods>
+      </class> <!-- com.qa.company.tests.OpenMRSTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
