@@ -3,6 +3,7 @@ package com.qa.company.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import com.qa.company.driver.DriverManager;
 import com.qa.company.enums.WaitStrategy;
 import com.qa.company.factories.ExplicitWaitFactory;
 import com.qa.company.reports.ExtentLogger;
@@ -31,5 +32,9 @@ public class BasePage {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+
+	protected String getTitle(){
+		return DriverManager.getDriver().getTitle();
 	}
 }

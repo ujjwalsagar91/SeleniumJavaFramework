@@ -8,7 +8,8 @@
 	</listeners>
 	<test thread-count="1" name="Test" parallel="methods">
 		<classes>
-			<class name="com.qa.company.tests.OpenMRSTest" />
+			<!-- <class name="com.qa.company.tests.OpenMRSTest" /> -->
+			<class name="com.qa.company.tests.AmazonDemoTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

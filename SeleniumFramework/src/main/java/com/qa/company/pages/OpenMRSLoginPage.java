@@ -34,7 +34,7 @@ public final class OpenMRSLoginPage extends BasePage{
 	}
 	
 	public String getTitle(){
-		return DriverManager.getDriver().getTitle();
+		return getTitle();
 	}
 	
 }
